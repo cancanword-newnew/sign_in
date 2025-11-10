@@ -141,10 +141,6 @@ async function login() {
         return;
     }
     
-    if (!/^\d+$/.test(studentId)) {
-        setStatusMessage('学号应为数字', 'error');
-        return;
-    }
     
     setStatusMessage('正在登录...', 'info');
     addLog('开始登录系统', 'info');
